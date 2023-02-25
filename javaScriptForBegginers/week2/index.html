@@ -30,9 +30,9 @@
         console.log(myValue) */
 
         var colors = ['red', 'green', 'blue', 'yellow'];
-        var selectColor = colors[4];
+        var selectColor = colors[3];
 
-        if (selectColor == 'red'){
+        /* if (selectColor == 'red'){
             console.log('the color is red');
         }
         else if(selectColor == 'green'){
@@ -43,6 +43,13 @@
         }
         else{
             console.log("the color is yelow");
+        } */
+
+        switch(selectColor){
+            case 'red':console.log("the color is red");
+            case 'blue': console.log("the color is blue");
+            case 'green':console.log("the color is green");
+            case 'yellow':console.log("the color is yellow");
         }
 
 
