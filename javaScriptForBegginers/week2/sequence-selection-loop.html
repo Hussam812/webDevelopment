@@ -27,17 +27,17 @@
         /* for( i = 0; i < foods.length; i++){
             console.log(`${newString} ${foods[i]}`)
         }
- */
-        for(var i = 0 ; i < foods.length; i++ ){
-            var reminder = i % 2;
-            if( reminder === 0){
-                var foodUpper = foods[i].toUpperCase();
-                console.log(`${newString} ${foodUpper}`);
+         */
+    
+        for(var i = 0; i < foods.length; i++ ){
+            if( i % 2 === 0){
+                console.log(`${newString} ${foods[i].toUpperCase()}`);
             }
             else {
                 console.log(`${newString} ${foods[i]}`);
             }
         }
+
     </script>
 </body>
 </html>
