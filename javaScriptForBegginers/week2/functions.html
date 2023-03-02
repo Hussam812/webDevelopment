@@ -18,7 +18,75 @@
         console.log(myString);
         console.log(upperString);
         }
-        doStuff()
+        // doStuff();
+
+        function checkNum(){
+            var userNum = prompt("Enter a whole number", "");
+            if(userNum < 10){
+                console.log("you entered a number less than 10");
+
+                for ( var i = 0; i < 10; i++){
+                    console.log(`Here is a ${i}`);
+                }
+            
+            }
+            else if(userNum > 9){
+                console.log("you entered a big number");
+
+            }
+            else{
+                console.log("you didn't enter a number!");
+            }
+
+        }
+        // checkNum();
+
+        // addNums(329, 419)
+        function addNums(num1, num2){
+
+            var sum = num1 + num2;
+            console.log(sum);
+
+        }
+
+        function upperMessage(message){
+            var upperMessage = message.toUpperCase();
+            console.log(upperMessage);
+        }
+        // upperMessage('Hey, Hello');
+
+
+        function returnSum(num1 , num2){
+            var sum = num1 + num2;
+            return sum;
+        }
+
+        // returnSum(10, 20)
+        // console.log(returnSum(10, 20))
+
+
+        function randInt(min, max){
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            var roundedRandomVal = Math.floor(randomVal);
+            var finalNum = min + roundedRandomVal;
+            
+            return finalNum
+            //console.log(finalNum);
+        }
+        // randInt(10, 20);
+
+        var foods = ["cheese", "chicken", "grapes", "hamburgers"];
+        //console.log(foods[randInt(0, 3)])
+
+        function refineRandomInt(min, max){
+            return Math.floor( (max - min + 1) * Math.random())+ min;
+        }
+
+        console.log(foods[refineRandomInt(0, 3)])
+
+
     </script>
 
 </body>
