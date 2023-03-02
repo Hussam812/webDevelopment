@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 16</title>
+</head>
+<body>
+    <h1>Challenge 16</h1>
+    <script>
+
+        var foods = ["Cheese", "Chicken" , "Dessert", "Candy", "Fruit"];
+        var userName = prompt("Provide your name", "");
+
+        function hello(){
+            var greeting;
+            if (userName == null || userName == ''){
+
+                greeting =  "You didn't give me your name";
+
+            }
+            else{
+                greeting = `Hello ${userName}, and Welcome!`;
+            }
+            return greeting
+        }      
+        function hospitality(name, gift){
+
+            console.log(hello());
+            var i = Math.floor((gift.length - 0+1) * Math.random())+0
+            console.log(`${name}, Would you like some ${gift[i]}`);
+
+        }
+        hospitality(userName, foods)
+       
+    </script>
+</body>
+</html>
