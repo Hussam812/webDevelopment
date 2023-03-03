@@ -8,10 +8,15 @@
 </head>
 <body>
     <h1>DOM Examples</h1>
-    <p id="one">Here is a Paragraph with a unique ID</p>
+    <p>Here is a Paragraph</p>
+    <p>Here is another Paragraph</p>
+    <p>Here is one more Paragraph</p>
+
 
     <script>
-        document.getElementById('one').style.color = "red";
+
+        var myParagraph = document.getElementsByTagName('p');
+        console.log(myParagraph)
     </script>
 </body>
 </html>
