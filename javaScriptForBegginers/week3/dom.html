@@ -9,16 +9,18 @@
 </head>
 <body>
     <h1>DOM Examples</h1>
-    <form>
-        <label><input type="checkbox">Yes!
-    </label>
-    </form>
+    <div>
+        <p>This is the frist paragraph on the page</p>
+    </div>
     
 
     <script>
-    
-        var myCheckbox = document.querySelector('input');
-        myCheckbox.setAttribute('checked', 'checked');
+        
+        var myTag = document.createElement('p');
+        var myText = document.createTextNode("Here is a new paragraph");
+        myTag.appendChild(myText);
+        var myDiv = document.querySelector('div');
+        myDiv.appendChild(myTag);
     </script>
 </body>
 </html>
