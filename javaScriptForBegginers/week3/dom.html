@@ -15,8 +15,14 @@
 
     <script>
 
-        var myParagraph = document.getElementsByTagName('p');
-        console.log(myParagraph)
+        var ps = document.getElementsByTagName('p');
+
+        for(var i = 0; i < ps.length; i++){
+            ps[i].style.color = "red";
+            //alert(`showing paragraph ${i}`)
+        }
+
+
     </script>
 </body>
 </html>
