@@ -8,15 +8,13 @@
 </head>
 <body>
     <h1>JavaScrpit Events</h1>
-    <button>Don't Press ME</button>
-
+    <a href="http://google.com">Link to Google</a>
     <script>
-        var btn = document.querySelector('button');
-       
-        btn.addEventListener('click',  function(event){ 
-            event.target.style.backgroundColor = "red";
-            alert("I told you not to press me!")
-        } );
+        var link = document.querySelector("a");
+        link.addEventListener('click', function(event){
+            event.preventDefault();
+            alert("sorry, No google for you!");
+        })
     </script>
 </body>
 </html>
