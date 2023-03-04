@@ -14,24 +14,17 @@
     </style>
 </head>
 <body>
-    <h1>Roll your mouse over the box</h1>
+    <h1>Capturing Scroll Events</h1>
     <div></div>
 
 
     <script>
-       var heading = document.querySelector('h1');
-       var box = document.querySelector('div')
-       box.addEventListener('mouseover', function(){
-        heading.innerHTML = "The mouse is over the box!";
-    
+       var pagetop;
+
+       window.addEventListener('scroll', function(){
+        pagetop = window.pageYOffset;
+        console.log(pagetop);
        });
-       box.addEventListener('mouseout', function(){
-        heading.innerHTML = "The mouse has left the box!";
-    
-       });
-       heading.addEventListener('mouseover', function(){
-        heading.innerHTML = "Roll your Mouse over the BOXES";
-       })
     </script>
 </body>
 </html>
