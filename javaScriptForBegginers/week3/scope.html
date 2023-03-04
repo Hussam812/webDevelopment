@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <h1>Testing Scope in JavaScript</h1>
+
+    <script>
+        var avariable = "this in the globle scope";
+        
+        function testScope(){
+
+            var avariable = "This is the local scope";
+            console.log(avariable);
+
+        };
+        testScope();
+        console.log(avariable);
+    </script>
+</body>
+</html>
