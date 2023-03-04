@@ -15,13 +15,13 @@
 </head>
 <body>
    
-    <h1>Resize the Window and Watch the Console</h1>
+    <h1>Heydown Event</h1>
+    <p>Press a key on your Keyboard</p>
 
     <script>
-        window.addEventListener('resize', function(){
-            console.log(`The window width is ${window.innerWidth}`);
-            console.log(`The window width is ${window.innerHeight}`);
-        })
+       document.addEventListener('keydown', function(event){
+        alert(`the ${event.which} key was pressed`);
+       });
     </script>
 </body>
 </html>
