@@ -10,16 +10,17 @@
     <h1>Testing Scope in JavaScript</h1>
 
     <script>
-        var avariable = "this in the globle scope";
+        //var avariable = "this in the globle scope";
         
         function testScope(){
 
+            oopsGlobal = "this is accidentally global";
             var avariable = "This is the local scope";
             console.log(avariable);
 
         };
         testScope();
-        console.log(avariable);
+        console.log(oopsGlobal);
     </script>
 </body>
 </html>
