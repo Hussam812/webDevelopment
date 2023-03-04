@@ -14,17 +14,14 @@
     </style>
 </head>
 <body>
-    <h1>Capturing Scroll Events</h1>
-    <div></div>
-
+   
+    <h1>Resize the Window and Watch the Console</h1>
 
     <script>
-       var pagetop;
-
-       window.addEventListener('scroll', function(){
-        pagetop = window.pageYOffset;
-        console.log(pagetop);
-       });
+        window.addEventListener('resize', function(){
+            console.log(`The window width is ${window.innerWidth}`);
+            console.log(`The window width is ${window.innerHeight}`);
+        })
     </script>
 </body>
 </html>
