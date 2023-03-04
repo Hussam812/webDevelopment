@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Challenges; Challenge 23</title>
+</head>
+<body>
+    <h1>JavaScript Event Challenges: Challenge 23</h1>
+    <p>Here is a paragraph of text</p>
+    <p>Here is another paragraph of text</p>
+    <p>Here is one more paragraph of text</p>
+    <button>Turn Them All Green Dammit! </button>
+
+    <script>
+        let pTag = document.querySelectorAll('p');
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(){
+           for(let i = 0; i < pTag.length; i++){
+                pTag[i].style.color = "green";
+            };
+        });
+        
+        /*btn.onclick = function(){
+            for(let i = 0; i < pTag.length; i++){
+                pTag[i].style.color = "green";
+            };
+            
+        };
+        */
+    </script>
+</body>
+</html>
